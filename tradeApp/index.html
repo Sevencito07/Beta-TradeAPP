@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade App</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="containers">
+            <div class="containerTitle">
+               <span class="titles ">budget</span>
+               <span class="titles ">range %</span>
+               <span class="titles">probavility $</span>
+            </div>
+            <div class="containerBoxs" >
+                <div class="box1 box">
+                    <button onclick="increaseBudget()">↑</button>
+                    <span id="budget" class="spanText">0$</span>
+                    <button onclick="decreaseBudget()">↓</button>
+                </div>
+                <div class="box2 box">
+                    <button onclick="increasePercentage()">↑</button>
+                    <span id="percentage" class="spanText">0%</span>
+                    <button onclick="decreasePercentage()">↓</button>
+                </div>
+                <div class="box3 box">
+                 <div class="conteinersRanges">
+                    <span class="spanText" id="rangeUp">0$</span>
+                    <span class="spanText" id="range">0$</span>
+                    <span class="spanText" id="rangeDown">0$</span>
+                 </div>
+                 <div class="conteinerButtonRange">
+                    <button class="buttonRange"   onmousedown="increaseRange()" onmouseup="stop()" onmouseleave="stop()">↑</button>
+                    <button class="buttonRange"   onmousedown="decreaserange()" onmouseup="stop()" onmouseleave="stop()">↓</button>
+                 </div>
+                </div>
+                <div class="box4 box">
+                    <h3 id="profit1"  class="h3UP" >0$</h3>
+                    <h3  id="profit2" class="h3Down">0$</h3>
+                </div>
+            </div>
+            <button onclick="profit()">↑tttt</button>
+        </div>
+        
+      
+    </div>
+</body>
+</html>
